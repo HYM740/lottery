@@ -11,7 +11,6 @@ public class Main {
      * @param args 从命令行传入的参数
      */
     public static void main(String[] args) {
-        int select=0;
         InputWithInfo iwi = new InputWithInfo();
         Administrator adm = new Administrator();
         String luckyNumber = adm.lottery();
@@ -63,6 +62,7 @@ public class Main {
                 case "4":
                     System.out.println("大富翁系统->查询");
                     System.out.println(nowLoggedIn);
+                    adm.listAll();
                     break;
                 case "5":{
                     System.out.println("大富翁系统->修改密码");

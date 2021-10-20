@@ -113,4 +113,10 @@ public class Administrator {
     public String lottery() {
         return "" + ((int) (Math.random() * 9000) + 1000);
     }
+    public void listAll(){
+        System.out.println("用户名\t会员号");
+        for(User u :users){
+            System.out.println(u.getName()+"\t"+u.getNumber());
+        }
+    }
 }
